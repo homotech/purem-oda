@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo-n-btn {
+  top: 0;
+  left: 0;
+}
+
+.pop-up-style {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 12px 0;
+  position: absolute;
+  transition: transform 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 270px;
+  will-change: transform;
+  z-index: 1;
+}
