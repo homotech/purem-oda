@@ -21,6 +21,9 @@
   left: 0;
 }
 
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
 .pop-up-style {
   background-color: #fff;
   display: flex;
