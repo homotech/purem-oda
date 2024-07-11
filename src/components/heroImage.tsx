@@ -13,7 +13,7 @@ export default function HeroImage() {
     {
       id: 2,
       image: ImageTwo,
-      text: "#rip stop",
+      text: "#insulated",
     },
   ];
 

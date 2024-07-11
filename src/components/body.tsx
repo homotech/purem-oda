@@ -1,4 +1,5 @@
 import HeroImage from "./heroImage";
+import HeroImageRight from "./heroImageRight";
 import HeroText from "./heroText";
 
 export default function Body() {
@@ -6,6 +7,7 @@ export default function Body() {
     <div className="container flex flex-wrap">
       <HeroText />
       <HeroImage />
+      <HeroImageRight />
     </div>
   );
 }
