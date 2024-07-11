@@ -15,7 +15,7 @@ import React, { useState } from "react";
 
 export default function Navbar() {
   const LinksClassName =
-    "uppercase hover:text-xl hover:font-bold transition duration-150 ease-in-out hover:duration-150 py-4";
+    "uppercase hover:font-bold transition duration-150 ease-in-out hover:duration-150 py-4";
   const iconsClassname = "text-2xl ";
   const Links = [
     { id: 1, link: "/womenswear", text: "Women's wear" },
@@ -59,7 +59,7 @@ export default function Navbar() {
         {/* The Navigation Links */}
         <ul
           className={
-            "nav-links w-full mt-4 lg:block lg:w-2/4 lg:flex lg:flex-row lg:gap-4 lg:justify-between " +
+            "nav-links w-full mt-4 lg:block lg:w-2/4 lg:flex lg:flex-row lg:gap-4 lg:justify-between box-border " +
             hideNavLinks
           }
         >
