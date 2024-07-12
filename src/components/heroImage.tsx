@@ -18,7 +18,7 @@ export default function HeroImage() {
   ];
 
   return (
-    <div className="w-full mt-4 flex flex-wrap">
+    <div className="w-full mt-4 flex flex-wrap gap-4 sm:flex-nowrap sm:h-96">
       {vibeImages.map((vibeImage) => (
         <div
           key={vibeImage.id}
@@ -28,7 +28,7 @@ export default function HeroImage() {
             <p className="text-6xl">{vibeImage.text}</p>
           </div>
           <Image
-            className=""
+            className="sm:w-auto top-1/2 left-1/2"
             src={vibeImage.image}
             alt={vibeImage.text}
           ></Image>

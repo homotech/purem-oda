@@ -12,7 +12,8 @@ export default function HeroText() {
 
           // layout="responsive"
         ></Image>
-        Everyone notanyone
+        <br />
+        Everyone but notanyone
       </h1>
       <p className="mt-24">
         We establish personal relationship with our boutiques, to make sure each

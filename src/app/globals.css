@@ -40,3 +40,9 @@
   will-change: transform;
   z-index: 1;
 }
+
+@media screen and (min-width: 1440px) {
+  .body-container {
+    height: 850px;
+  }
+}
