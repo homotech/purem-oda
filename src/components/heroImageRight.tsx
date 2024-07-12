@@ -5,11 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 export default function HeroImageRight() {
   return (
-    <div className="relative rounded-lg h-auto overflow-hidden md:w-1/2">
-      <button className="uppercase shop-now-btn w-20 text-sm text-wrap h-20 flex justify-center items-center rounded-full absolute border-2 border-white p-8 text-white z-10 box-border">
+    <div className="relative rounded-lg h-full overflow-hidden md:w-1/2">
+      <button className="uppercase shop-now-btn w-20 text-sm text-wrap h-20 flex justify-center items-center rounded-full absolute border-2 border-white p-8 text-white z-20 box-border">
         Shop Now
       </button>
-      <div className="absolute overlay w-full p-6 box-border h-full flex flex-col md:flex-row md:flex-nowrap gap-4 flex-wrap justify-end items-end top-0 left-0">
+      <div className="absolute overlay w-full p-6 box-border h-full flex flex-col lg:flex-row lg:flex-nowrap gap-4 flex-wrap justify-end items-end top-0 left-0 z-10">
         <button
           onClick={() => {
             console.log("Learn More");
@@ -34,7 +34,13 @@ export default function HeroImageRight() {
           </div>
         </button>
       </div>
-      <Image src={ImageThree} alt="A bucket hat model" className="o"></Image>
+      <Image
+        src={ImageThree}
+        alt="A bucket hat model"
+        className=""
+        layout="fill"
+        objectFit="cover"
+      ></Image>
     </div>
   );
 }

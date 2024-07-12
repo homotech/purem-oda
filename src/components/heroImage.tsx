@@ -18,19 +18,22 @@ export default function HeroImage() {
   ];
 
   return (
-    <div className="w-full mt-4 flex flex-wrap gap-4 sm:flex-nowrap sm:h-96">
+    <div className="w-full mt-4 sm:m-0 flex flex-wrap gap-4 sm:flex-nowrap bg-red-300 overflow-hidden ">
       {vibeImages.map((vibeImage) => (
         <div
           key={vibeImage.id}
-          className="relative w-full rounded-lg overflow-hidden mb-4"
+          className="relative w-full h-full bg-red-200 rounded-lg overflow-hidden mb-4"
         >
-          <div className="overlay bebas-neue-regular text-white p-4 flex items-end absolute h-full w-full">
-            <p className="text-6xl">{vibeImage.text}</p>
+          <div className="overlay text-white p-4 flex items-end absolute h-full w-full">
+            <p className="text-6xl md:text-4xl bebas-neue-regular">
+              {vibeImage.text}
+            </p>
           </div>
           <Image
-            className="sm:w-auto top-1/2 left-1/2"
+            className="sm:w-auto h-auto top-1/2 left-1/2"
             src={vibeImage.image}
             alt={vibeImage.text}
+            layout="fill"
           ></Image>
         </div>
       ))}
