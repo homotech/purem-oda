@@ -28,21 +28,17 @@
 .overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-.pop-up-style {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  padding: 12px 0;
-  position: absolute;
-  transition: transform 0.25s cubic-bezier(0.19, 1, 0.22, 1);
-  width: 270px;
-  will-change: transform;
-  z-index: 1;
+@media screen and (min-width: 768px) {
 }
-
 @media screen and (min-width: 1440px) {
+  .object-top-left {
+    object-position: 20% 35%;
+  }
   .body-container {
     height: 850px;
+  }
+  .shop-now-btn {
+    top: 3%;
+    left: 82%;
   }
 }

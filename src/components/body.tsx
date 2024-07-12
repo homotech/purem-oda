@@ -4,8 +4,8 @@ import HeroText from "./heroText";
 
 export default function Body() {
   return (
-    <div className="flex flex-wrap md:flex-nowrap md:h-[750px] md:flex-row md:gap-4 body-container">
-      <div className="md:w-1/2 h-full md:flex md:flex-col md:justify-between">
+    <div className="h-auto flex flex-wrap md:flex-nowrap md:h-[750px] md:flex-row md:gap-4 body-container">
+      <div className="w-full md:w-1/2 h-full md:flex md:flex-col md:gap-4">
         <HeroText />
         <HeroImage />
       </div>

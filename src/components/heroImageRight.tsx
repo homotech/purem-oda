@@ -37,9 +37,9 @@ export default function HeroImageRight() {
       <Image
         src={ImageThree}
         alt="A bucket hat model"
-        className=""
-        layout="fill"
-        objectFit="cover"
+        className="md:object-cover md:w-full md:h-full"
+        // layout="fill"
+        // objectFit="cover"
       ></Image>
     </div>
   );
